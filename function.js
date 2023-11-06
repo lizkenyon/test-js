@@ -1,7 +1,6 @@
 function myFunction() {
   console.log("Hello JavaScript! This is hosted on github");
 
-document.addEventListener("DOMContentLoaded", function() {
   console.log("Window has loaded");
  var para = document.createElement("p");
 
@@ -21,7 +20,6 @@ iframe.contentWindow.document.write(html);
 iframe.contentWindow.document.close();
 
 console.log("iframe");  
-});
 }
 
 myFunction();
