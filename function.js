@@ -1,7 +1,7 @@
 function myFunction() {
   console.log("Hello JavaScript! This is hosted on github");
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
   console.log("Window has loaded");
  var para = document.createElement("p");
 
@@ -12,7 +12,7 @@ var node = document.createTextNode("This is a new paragraph.");
 para.appendChild(node);
 
 document.body.appendChild(para);
-}
+});
 }
 
 myFunction();
