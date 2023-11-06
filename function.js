@@ -12,7 +12,7 @@ var node = document.createTextNode("This is a new paragraph.");
 para.appendChild(node);
 
 document.body.appendChild(para);
-
+console.log("Will create iframe");
 var iframe = document.createElement('iframe');
 var html = '<body>Foo</body>';
 document.body.appendChild(iframe);
