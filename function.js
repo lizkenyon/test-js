@@ -3,10 +3,12 @@ function myFunction() {
 
   var iframe = document.createElement('iframe');
 
-// Set some properties for the iframe
-iframe.src = 'https://www.example.com';
-iframe.width = '500';
-iframe.height = '300';
+var iframe = document.createElement('iframe');
+var html = '<body>Foo</body>';
+document.body.appendChild(iframe);
+iframe.contentWindow.document.open();
+iframe.contentWindow.document.write(html);
+iframe.contentWindow.document.close();
 
 // Append the iframe to the body (or any other element)
 document.body.appendChild(iframe);
