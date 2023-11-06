@@ -12,6 +12,13 @@ var node = document.createTextNode("This is a new paragraph.");
 para.appendChild(node);
 
 document.body.appendChild(para);
+
+var iframe = document.createElement('iframe');
+var html = '<body>Foo</body>';
+document.body.appendChild(iframe);
+iframe.contentWindow.document.open();
+iframe.contentWindow.document.write(html);
+iframe.contentWindow.document.close();
 });
 }
 
