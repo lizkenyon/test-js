@@ -1,8 +1,16 @@
 function myFunction() {
   console.log("Hello JavaScript! This is hosted on github");
+  if (document.readyState === "loading") {
+     document.addEventListener("DOMContentLoaded", addElements);
+    console.log("Window has loaded");
+    else {
+    addElements();
+    console.log("Window already loaded");
+  }
+}
 
-  console.log("Window has loaded");
- var para = document.createElement("p");
+function addElements() {
+var para = document.createElement("p");
 
 // Create a text node
 var node = document.createTextNode("This is a new paragraph.");
