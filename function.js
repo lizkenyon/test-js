@@ -3,7 +3,7 @@ function myFunction() {
   if (document.readyState === "loading") {
      document.addEventListener("DOMContentLoaded", addElements);
     console.log("Window has loaded");
-    else {
+  } else {
     addElements();
     console.log("Window already loaded");
   }
